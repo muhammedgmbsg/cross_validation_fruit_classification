@@ -1,11 +1,11 @@
-# 🍎 CNN-Based Fruit Classification
+# CNN-Based Fruit Classification
 
 A deep learning-based image classification project developed for recognizing **10 different fruit categories** using a **Convolutional Neural Network (CNN)** architecture.  
 The model performance was evaluated using **10-Fold Cross Validation**, achieving over **80% accuracy** on several data subsets.
 
 ---
 
-# 📌 Project Overview
+# Project Overview
 
 This project focuses on building an efficient and generalized fruit classification model using modern deep learning techniques.  
 The dataset consists of images belonging to **10 distinct fruit classes**.
@@ -14,11 +14,11 @@ To ensure robust evaluation and minimize bias, the model was tested using the **
 
 ---
 
-# 🧠 Model Architecture & Techniques
+# Model Architecture & Techniques
 
 The CNN architecture was carefully designed to improve classification performance while efficiently utilizing hardware resources.
 
-## 🔹 Convolutional Neural Networks (CNN)
+## Convolutional Neural Networks (CNN)
 
 A multi-layer CNN architecture was implemented to hierarchically extract visual features such as:
 
@@ -30,7 +30,7 @@ from fruit images.
 
 ---
 
-## 🔹 Global Average Pooling (GAP)
+## Global Average Pooling (GAP)
 
 Instead of using a traditional `Flatten` layer, **Global Average Pooling (GAP)** was applied.
 
@@ -43,7 +43,7 @@ Instead of using a traditional `Flatten` layer, **Global Average Pooling (GAP)**
 
 ---
 
-## 🔹 Batch Normalization
+## Batch Normalization
 
 Batch Normalization layers were integrated into convolutional blocks to:
 
@@ -54,7 +54,7 @@ Batch Normalization layers were integrated into convolutional blocks to:
 
 ---
 
-## 🔹 Dropout (0.6)
+## Dropout (0.6)
 
 A high-rate dropout strategy (`0.6`) was used to prevent the model from memorizing training data.
 
@@ -66,9 +66,9 @@ A high-rate dropout strategy (`0.6`) was used to prevent the model from memorizi
 
 ---
 
-# 📊 Data Preprocessing & Training Strategies
+# Data Preprocessing & Training Strategies
 
-## 🔹 Data Augmentation
+## Data Augmentation
 
 To improve model robustness against different image conditions, several augmentation techniques were applied:
 
@@ -80,7 +80,7 @@ These transformations increased dataset diversity and improved generalization.
 
 ---
 
-## 🔹 Early Stopping
+## Early Stopping
 
 The training process was monitored using **Early Stopping** with `restore_best_weights=True`.
 
@@ -92,7 +92,7 @@ This allowed the model to:
 
 ---
 
-## 🔹 ReduceLROnPlateau
+## ReduceLROnPlateau
 
 A dynamic learning rate reduction strategy was used during training.
 
@@ -104,7 +104,7 @@ When the loss function stopped improving:
 
 ---
 
-# 📈 Performance Analysis
+# Performance Analysis
 
 During the 10-Fold Cross Validation process:
 
@@ -119,7 +119,7 @@ positively contributed to the model’s generalization capability.
 
 ---
 
-# 🛠 Technologies Used
+# Technologies Used
 
 - Python
 - TensorFlow / Keras
@@ -129,19 +129,19 @@ positively contributed to the model’s generalization capability.
 
 ---
 
-# 🚀 Features
+# Features
 
-- ✅ Deep Learning-based Fruit Classification
-- ✅ 10 Different Fruit Categories
-- ✅ CNN Architecture Optimization
-- ✅ 10-Fold Cross Validation
-- ✅ Data Augmentation Support
-- ✅ Overfitting Prevention Techniques
-- ✅ Dynamic Learning Rate Scheduling
+- Deep Learning-based Fruit Classification
+- 10 Different Fruit Categories
+- CNN Architecture Optimization
+- 10-Fold Cross Validation
+- Data Augmentation Support
+- Overfitting Prevention Techniques
+- Dynamic Learning Rate Scheduling
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```bash
 ├── dataset/
@@ -156,7 +156,7 @@ positively contributed to the model’s generalization capability.
 
 ---
 
-# 📌 Future Improvements
+# Future Improvements
 
 - Transfer Learning Integration (ResNet, EfficientNet, MobileNet)
 - Larger and more diverse fruit datasets
@@ -165,7 +165,7 @@ positively contributed to the model’s generalization capability.
 
 ---
 
-# 📜 Conclusion
+# Conclusion
 
 This project demonstrates the effectiveness of CNN-based architectures for fruit image classification tasks.  
 The combination of advanced regularization methods, preprocessing strategies, and cross-validation techniques resulted in a stable and successful deep learning model with strong generalization performance.
